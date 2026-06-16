@@ -9,17 +9,17 @@
             margin: 0; padding: 0; width: 100%; height: 100%;
             overflow: hidden; background-color: #000;
         }
-        iframe {
-            width: 100%; height: 100%; border: none;
+        video {
+            width: 100%; height: 100%; object-fit: contain;
         }
     </style>
 </head>
 <body>
 
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-    </iframe>
+    <!-- Direkt ham video dosyası oynatılır, YouTube reklamı veya site reklamı asla çıkmaz -->
+    <video controls name="media">
+        <source src="https://rickroll.it/rickroll.mp4" type="video/mp4">
+    </video>
 
 </body>
 </html>
